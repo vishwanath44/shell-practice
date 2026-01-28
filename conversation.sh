@@ -1,7 +1,11 @@
 #!/bin/bash
+PERSON1=vishwa # no space between value and =
+PERSON2=chinta 
 
-echo "vishwa:: hello, howw are you"
+echo "$PERSON1:: hello $PERSON2, howw are you?"
 
-echo "chinta:: i am fine, how about you"
+echo "$PERSON2:: hello $PERSON1, i am fine, thanks for asking. how are you?"
 
-echo "vishwa:: i am doing well"
+echo "$PERSON1:: i am doing well, what are you learding $PERSON2"
+
+echo :$PERSON2:: "i am learning shell. what about you?"
