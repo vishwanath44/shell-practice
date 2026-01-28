@@ -1,4 +1,5 @@
 #!/bin/bash
+
 PERSON1=Trump # no space between value and =
 PERSON2=Modi 
 
