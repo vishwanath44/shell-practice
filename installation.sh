@@ -26,11 +26,11 @@ else
     echo "Installing Mysql ... Success"
 fi
 
-dnf install node.js -y
+dnf install nodejs -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing node.js ... FAILURE"
+    echo "Installing nodejs ... FAILURE"
     exit 1
 else
-    echo "Installing node.js ... Success"
+    echo "Installing nodejs ... Success"
 fi
