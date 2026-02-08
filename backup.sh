@@ -20,6 +20,16 @@ USAGE(){
     exit 1
 }
 
-if [ $# -1t 2 ]; then
+if [ $# -lt 2 ]; then
     USAGE
+fi
+
+if [ ! -d "$SOURCE_DIR" ]; then
+    log "$R $SOURCE_DIR does not exist $N"
+    exit 1
+fi
+
+if [ ! -d "$DEST_DIR" ]; then
+    log -e "$R $DEST_DIR does not exist $N"
+    exit 1
 fi
